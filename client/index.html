@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- 
+         TO RUN THE LIVE SERVER: enter 'live-server' in the Desktop\FullStackDevelopmet\Client
+         TO RUN THE LIVE LOCALHOST: enter 'npm run dev' in Desktop\FullStackDevelopmet\Server 
+        -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css>
+    <link rel="stylesheet" href="styles.css">
+    <title>Twitter Clone</title>
 </head>
 <body>
-    
+    <header>
+        <h1 class="title">Sad Twitter Clone</h1>
+    </header>
+    <main>
+        <form class="clone-form">
+            <label for="name"> Name </label>
+            <input class="u-full-width" type="text" id ="name" name="name">
+            <label for="content"> Tweet </label>
+            <textarea class="u-full-width" type="text" id ="content" name="content"></textarea>
+            <button class="button-primary" >Send</button>
+        </form>
+        <div class="loading">
+            <img src="loading.gif" alt="loading">
+        </div>
+    </main>
+    <script src="client.js"></script>
 </body>
 </html>
